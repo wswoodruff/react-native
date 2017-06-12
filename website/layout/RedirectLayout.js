@@ -11,8 +11,9 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 
-var RedirectLayout = React.createClass({
+var RedirectLayout = createReactClass({
   render: function() {
     var destinationUrl = this.props.metadata.destinationUrl;
 

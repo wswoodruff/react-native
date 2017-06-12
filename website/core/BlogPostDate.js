@@ -12,8 +12,9 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 
-var BlogPostDate = React.createClass({
+var BlogPostDate = createReactClass({
   render: function() {
     var post = this.props.post;
 

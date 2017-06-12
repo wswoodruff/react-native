@@ -19,6 +19,7 @@ var Marked = require('Marked');
 var Metadata = require('Metadata');
 var Prism = require('Prism');
 var React = require('React');
+var createReactClass = require('create-react-class');
 const PropTypes = require('prop-types');
 var Site = require('Site');
 
@@ -204,7 +205,7 @@ function getNamedTypes(typedefs) {
   return namedTypes;
 }
 
-var ComponentDoc = React.createClass({
+var ComponentDoc = createReactClass({
   renderProp: function(name, prop) {
     return (
       <div className="prop" key={name}>
@@ -408,7 +409,7 @@ var ComponentDoc = React.createClass({
   }
 });
 
-var APIDoc = React.createClass({
+var APIDoc = createReactClass({
 
   renderMethod: function(method, namedTypes) {
     return (
@@ -574,7 +575,7 @@ var APIDoc = React.createClass({
   }
 });
 
-var Method = React.createClass({
+var Method = createReactClass({
   renderTypehintRec: function(typehint) {
     if (typehint.type === 'simple') {
       return typehint.value;
@@ -693,7 +694,7 @@ var Method = React.createClass({
   },
 });
 
-var TypeDef = React.createClass({
+var TypeDef = createReactClass({
   renderProperties: function(properties) {
     if (!properties || !properties.length) {
       return null;
@@ -785,7 +786,7 @@ var TypeDef = React.createClass({
   },
 });
 
-var Autodocs = React.createClass({
+var Autodocs = createReactClass({
   childContextTypes: {
     permalink: PropTypes.string,
     version: PropTypes.string

@@ -11,8 +11,9 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 
-var EjectBanner = React.createClass({
+var EjectBanner = createReactClass({
   render: function() {
     return (
       <div className="banner-crna-ejected">

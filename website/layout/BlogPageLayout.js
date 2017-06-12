@@ -12,13 +12,14 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 var Site = require('Site');
 var Hero = require('Hero');
 var MetadataBlog = require('MetadataBlog');
 var BlogPost = require('BlogPost');
 var BlogPostExcerpt = require('BlogPostExcerpt');
 
-var BlogPageLayout = React.createClass({
+var BlogPageLayout = createReactClass({
   getPageURL: function(page) {
     var url = '/react-native/blog/';
     if (page > 0) {

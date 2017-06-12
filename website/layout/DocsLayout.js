@@ -17,10 +17,11 @@ var Header = require('Header');
 var Marked = require('Marked');
 var Metadata = require('Metadata');
 var React = require('React');
+var createReactClass = require('create-react-class');
 var PropTypes = require('prop-types');
 var Site = require('Site');
 
-var DocsLayout = React.createClass({
+var DocsLayout = createReactClass({
   childContextTypes: {
     permalink: PropTypes.string,
     version: PropTypes.string

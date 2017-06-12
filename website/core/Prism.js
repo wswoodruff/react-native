@@ -11,6 +11,7 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 
 var _ = {
   util: {
@@ -526,7 +527,7 @@ _.languages.java = _.languages.extend('clike', {
   },
 });
 
-var Prism = React.createClass({
+var Prism = createReactClass({
   statics: {
     _: _,
   },

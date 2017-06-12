@@ -11,8 +11,9 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 
-var center = React.createClass({
+var center = createReactClass({
   render: function() {
     return (
       <div {...this.props} style={{textAlign: 'center'}}>

@@ -13,7 +13,7 @@
 var AlgoliaDocSearch = require('AlgoliaDocSearch');
 var React = require('React');
 
-var HeaderLinks = React.createClass({
+var HeaderLinks = createReactClass({
   linksInternal: [
     {section: 'docs', href: 'docs/getting-started.html', text: 'Docs', target: '.nav-docs'},
     {section: 'support', href: '/react-native/support.html', text: 'Help'},

@@ -12,10 +12,11 @@
 
 var Marked = require('Marked');
 var React = require('React');
+var createReactClass = require('create-react-class');
 var PropTypes = require('prop-types');
 var Site = require('Site');
 
-var support = React.createClass({
+var support = createReactClass({
   childContextTypes: {
     permalink: PropTypes.string
   },

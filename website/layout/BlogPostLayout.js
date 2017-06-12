@@ -12,6 +12,7 @@
 'use strict';
 
 var React = require('React');
+var createReactClass = require('create-react-class');
 var Site = require('Site');
 var Hero = require('Hero');
 var MetadataBlog = require('MetadataBlog');
@@ -19,7 +20,7 @@ var BlogPost = require('BlogPost');
 var BlogPostHeader = require('BlogPostHeader');
 var Marked = require('Marked');
 
-var BlogPostLayout = React.createClass({
++var BlogPostLayout = createReactClass({
   render: function() {
     return (
       <Site
